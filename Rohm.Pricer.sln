@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rohm.Pricer", "Rohm.Pricer\Rohm.Pricer.csproj", "{88EB866D-D23B-42ED-B888-CF4C389F284B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rohm.Pricer.Tests", "Rohm.Pricer.Tests\Rohm.Pricer.Tests.csproj", "{AB1ED3ED-0E28-4B91-80D1-3ED92B1B22C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{88EB866D-D23B-42ED-B888-CF4C389F284B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88EB866D-D23B-42ED-B888-CF4C389F284B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88EB866D-D23B-42ED-B888-CF4C389F284B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB1ED3ED-0E28-4B91-80D1-3ED92B1B22C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1ED3ED-0E28-4B91-80D1-3ED92B1B22C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1ED3ED-0E28-4B91-80D1-3ED92B1B22C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1ED3ED-0E28-4B91-80D1-3ED92B1B22C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

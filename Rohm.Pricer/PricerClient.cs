@@ -113,8 +113,43 @@ namespace Rohm.Pricer
         public DisplayPageResponse DisplayPage(DisplayPageRequest request)
         { 
             return _apiClient.Request<DisplayPageResponse>(Methods.POST,
-                 $"api/public/core/v1/display-page/labels", request);
+                 $"display-page/labels", request);
         }
 
+        public FlashItem[] GetFlashItems(FlashItemRequest request)
+        {
+            return _apiClient.Request<FlashItem[]>(Methods.POST,
+                $"flash/items", request);
+        }
+
+        public FlashResultResponse GetFlashResults(int requestId, FlashResultRequest request)
+        { 
+            return _apiClient.Request<FlashResultResponse>(Methods.GET,
+                $"flash-result/items/{requestId}", request);
+        }
+
+        public Item[] GetMultipleItems(ItemPaginateQuery query)
+        {
+            return _apiClient.Request<Item[]>(Methods.GET,
+                $"items", query);
+        }
+
+        public DeleteItemListResponse DeleteListOfItems(DeleteItemListRequest request)
+        {
+            return _apiClient.Request<DeleteItemListResponse>(Methods.DELETE,
+                    $"items", request);
+        }
+
+        public UpdateItemListResponse UpdateListOfItems(UpdateItemListRequest[] request)
+        {
+            return _apiClient.Request<UpdateItemListResponse>(Methods.PATCH,
+                        $"items", request);
+        }
+
+        public GetSingleItemQueryResponse GetSingleItem(int itemId, GetSingleItemQuery request)
+        {
+            return _apiClient.Request<GetSingleItemQueryResponse>(Methods.GET,
+                        $"items/{itemId}", request);
+        }
     }
 }
